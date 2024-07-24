@@ -15,10 +15,18 @@ aws s3 cp s3://BUCKET_NAME/Flights.py .
 aws s3 cp s3://BUCKET_NAME/randomData100k.csv . 
 ```
 5. Copy files from the local file system to the Hadoop Distributed File System (HDFS)
-`hadoop fs -put randomData100k.csv /input/`
+```
+hadoop fs -put randomData100k.csv /input/
+```
 6. Submit the Python script (Flights.py) with input and output directories specified in HDFS.
-`/usr/bin/spark-submit Flights.py /input/randomData100k.csv /output/`
+```
+/usr/bin/spark-submit Flights.py /input/randomData100k.csv /output/
+```
 7. For adding the output to text file, execute this command - 
-`hadoop fs -cat output/* > output/true_pred100k.txt`
+```
+hadoop fs -cat output/* > output/true_pred100k.txt
+```
 8. Copy the output file to bucket and then downloaded directly from S3. For copying file to s3
-`aws s3 cp output/true_pred100k.txt s3://BUCKET_NAME/true_pred100k.txt`
+```
+aws s3 cp output/true_pred100k.txt s3://BUCKET_NAME/true_pred100k.txt
+```
