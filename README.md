@@ -1,4 +1,4 @@
-### Contents
+### Repo Contents
 1. Flights.py - Contains all the source code for the custom-built Logistic Regression algorithm, Logistic Regression using MLib, and Random Forest algorithm using MLib 
 2. DataAnalysis.py - Contains code for analyzing 15000 random samples in the dataset
 3. PlotResults.py - Predicted and actual label values for custom-built logistic regression algorithm and result graphs.
