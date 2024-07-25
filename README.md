@@ -4,6 +4,13 @@
 ## Motivation
 To implement ML classification algorithms from scratch using Apache Spark(PySpark), measure model performance and benchmark it against Spark’s built-in machine learning library MLlib.
 
+## Task
+Predict whether flights will be delayed or not based on feature parameters.
+
+## Dataset
+- The dataset used is [2015 Flight Delays and Cancellations](https://www.kaggle.com/datasets/usdot/flight-delays). It is collected from the U.S. Department of Transportation’s (DOT) Bureau of Transportation Statistics which contains information of flights in the year 2015, with respect to airline carrier, original airport, destination airport, distance traveled by the flight, time spent, departure delay time, arrival delay time, etc.
+- The dataset is significantly large, with more than 1 million rows and 31 features, making it ideal for demonstrating the power of PySpark's distributed computing over Big Data. The rich feature set provided a good exercise in creating feature pipelines and integrating the stages together.
+
 ## Algorithms and Techniques implemented:
 - Algorithm used: Logistic Regression.
 - Apache Spark is an open source cluster computing framework which has been built around speed, ease of use and streaming analytics. 
@@ -12,10 +19,6 @@ To implement ML classification algorithms from scratch using Apache Spark(PySpar
 used Pipelines to tie the stages of categorical and numerical feature encoding
 transformations. A pipeline chains multiple Transformations and Estimators together to
 specify an ML workflow.
-
-## Dataset
-- The dataset used is [2015 Flight Delays and Cancellations](https://www.kaggle.com/datasets/usdot/flight-delays). It is collected from the U.S. Department of Transportation’s (DOT) Bureau of Transportation Statistics which contains information of flights in the year 2015, with respect to airline carrier, original airport, destination airport, distance traveled by the flight, time spent, departure delay time, arrival delay time, etc.
-- The dataset is significantly large, with more than 1 million rows and 31 features, making it ideal for demonstrating the power of PySpark's distributed computing over Big Data. The rich feature set provided a good exercise in creating feature pipelines and integrating the stages together.
 
 ## Contents
 1. Flights.py - Contains all the source code for the custom-built Logistic Regression algorithm, Logistic Regression using MLib, and Random Forest algorithm using MLib 
